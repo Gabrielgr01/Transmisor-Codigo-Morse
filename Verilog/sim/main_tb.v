@@ -32,7 +32,7 @@ module main_tb(
     wire Y;
     
     //instantiate
-    main_prueba UUT(CLK, RST, RxData, Start, Y
+    main UUT(CLK, RST, RxData, Start, Y
     );
     
     //stimulus
