@@ -5,7 +5,7 @@
 // 
 // Create Date: 11.11.2021 00:14:10
 // Design Name: 
-// Module Name: main_prueba
+// Module Name: main
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
