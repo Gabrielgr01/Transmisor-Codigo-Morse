@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module main_prueba(input CLK, input RST, input [6:0] RxData, input Start, output Y
+module main(input CLK, input RST, input [6:0] RxData, input Start, output Y
     );
     
     wire [21:0] datos_traductor;
