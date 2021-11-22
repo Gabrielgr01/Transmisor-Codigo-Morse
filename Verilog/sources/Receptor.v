@@ -19,6 +19,9 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// El código de este módulo se obtuvo de los siguientes sitios:
+// https://www.instructables.com/UART-Communication-on-Basys-3-FPGA-Dev-Board-Power-1/
+// https://www.youtube.com/watch?v=XpfEHPg5AxU&t=287s
 
 module Receptor(
     input clk, //input clock
