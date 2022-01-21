@@ -34,7 +34,7 @@ module divisor(
     
     contador cont(CLK, RST_28b, sal_contador_28b
     );
-    comparador_frec comp(entrada_28b, sal_contador_28b, sal_comp_28b
+    comparador_28b comp(entrada_28b, sal_contador_28b, sal_comp_28b
     );
     FF_T salida(CLK, RST, sal_comp_28b, CLK_2
     );
