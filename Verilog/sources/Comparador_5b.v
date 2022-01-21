@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Comparador(entrada1, entrada2, salida
+module Comparador_5b(entrada1, entrada2, salida
     );
     input [4:0] entrada1;
     input [4:0] entrada2;
