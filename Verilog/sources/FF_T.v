@@ -20,20 +20,21 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module FF_T(CLK, RST, T, Q
+module FF_T(CLK, RST, T, Qn
     );
     
     input T, RST, CLK;
-    output reg Q;
+    output reg Qn;
     
-    always @(posedge CLK)
+    always @(posedge CLK or posedge RST)
         if (RST) begin 
-            Q <= 1'b1;
+            Qn <= 1'b1;
         end
-        else
-        case (T)
-            1'd0 : Q <= Q;
-            1'd1 : Q <= ~Q;
-        endcase
+        else if (T) begin
+            Qn <= ~Qn;
+        end
+        else begin
+            Qn <= Qn;
+        end
     
 endmodule
