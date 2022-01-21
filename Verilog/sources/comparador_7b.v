@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module comparador_caracter(
+module comparador_7b(
     input[6:0] A,
     input[6:0] B,
     output reg salida
