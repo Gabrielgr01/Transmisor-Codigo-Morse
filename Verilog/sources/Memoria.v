@@ -116,7 +116,7 @@ module Memoria(input [26:0] datos, input[3:0] conta_carac, input CLK, input RST,
     
     wire [4:0] salida_cont_5b;
     
-    Comparador Comp1(salida_mux2, salida_cont_5b, Reset_Comp
+    Comparador_5b Comp1(salida_mux2, salida_cont_5b, Reset_Comp
     );
     
     wire Reset_cont2 = Reset_Comp | RST | salida_FFJK;
