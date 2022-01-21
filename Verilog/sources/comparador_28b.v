@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module comparador_frec(
+module comparador_28b(
     input[27:0] entrada1,
     input[27:0] entrada2,
     output reg salida
