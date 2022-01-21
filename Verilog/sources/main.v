@@ -27,10 +27,10 @@ module main(input CLK, input RST, input [6:0] RxData, input Start, output Y
     wire [6:0] RxData_sal;
     wire Char_Detected;
     
-    Registro_PP_7b registro (RxData, RST, CLK, RxData_sal
+    Registro_PP_7b registro(RxData, RST, CLK, RxData_sal
     );
     
-    comparador_caracter comp(RxData, RxData_sal, Char_Detected
+    comparador_7b Comp_Caracter(RxData, RxData_sal, Char_Detected
     );
     
     MUX_Traductor Traductor_Senal(RxData_sal, datos_traductor
