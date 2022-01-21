@@ -27,10 +27,8 @@ module comparador_caracter(
     );
     
     always @(A or B)
-    begin
         if (A == B) 
             salida <= 1'd0;
         else 
             salida <= 1'd1;
-    end
 endmodule
