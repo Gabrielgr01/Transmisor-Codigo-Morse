@@ -22,16 +22,22 @@
 
 module divisor(
     input CLK, RST,
-    output DIV_2
+    output CLK_2
     );
     
-    wire [27:0] div1;
-    wire div2, OUT;
+    wire [27:0] sal_contador_28b;
+    wire sal_comp_28b;
     
-   contador cont(CLK, RST|div2, div1);
-   comparador_frec comp(div1, div2);
-   FF_T flipflop(CLK, RST, div2, OUT);
+    wire RST_28b = RST | sal_comp_28b;
     
-    assign DIV_2 = OUT;
+    wire [27:0] entrada_28b = 28'd99999999;
+    
+    contador cont(CLK, RST_28b, sal_contador_28b
+    );
+    comparador_frec comp(entrada_28b, sal_contador_28b, sal_comp_28b
+    );
+    FF_T salida(CLK, RST, sal_comp_28b, CLK_2
+    );
+    
     
 endmodule
