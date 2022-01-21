@@ -25,9 +25,9 @@ module Contador_4(CLK, RST, salida
     input CLK, RST;
     output reg [3:0] salida;
     
-    always @(posedge CLK)
+    always @(posedge CLK or posedge RST)
         if (RST)
             salida <= 4'b0;
         else
-            salida <= salida +1'b1;
+            salida <= salida + 1'b1;
 endmodule
