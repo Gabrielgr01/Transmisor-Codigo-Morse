@@ -32,7 +32,7 @@ module divisor(
     
     wire [27:0] entrada_28b = 28'd99999999;
     
-    contador cont(CLK, RST_28b, sal_contador_28b
+    contador_28b cont(CLK, RST_28b, sal_contador_28b
     );
     comparador_28b comp(entrada_28b, sal_contador_28b, sal_comp_28b
     );
