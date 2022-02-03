@@ -46,7 +46,7 @@ module MUX_Cantidad(
             7'h43: data = 5'd13; //C
             7'h44: data = 5'd9; //D
             7'h45: data = 5'd3;// E
-            7'h47: data = 5'd11;// F
+            7'h46: data = 5'd11;// F
             7'h47: data = 5'd11; //G
             7'h48: data = 5'd9; //H
             7'h49: data = 5'd5; //I
